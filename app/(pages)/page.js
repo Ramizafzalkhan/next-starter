@@ -1,9 +1,15 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import styles from '../page.module.css'
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Head>
+        <title>First Postt</title>
+      </Head>
+      <h1>First Post</h1>
+
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
