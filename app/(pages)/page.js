@@ -5,10 +5,14 @@ import Head from 'next/head'
 export default function Home() {
   return (
     <main className={styles.main}>
+      <head>
+        <title>Home Page</title>
+        <meta property="og:title" content="My page title" key="title" />
+      </head>
       <Head>
-        <title>First Postt</title>
+        <meta property="og:title" content="My new title" key="title" />
       </Head>
-      <h1>First Post</h1>
+    
 
       <div className={styles.description}>
         <p>
@@ -23,11 +27,11 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
+              src="/images/design-tools-animate.svg"
               alt="Vercel Logo"
               className={styles.vercelLogo}
-              width={100}
-              height={24}
+              width={1000}
+              height={1000}
               priority
             />
           </a>
