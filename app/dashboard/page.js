@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Dashboard() {
+export default  function Dashboard() {
 
     return <>
         <Head>
@@ -12,9 +12,11 @@ export default function Dashboard() {
             <meta property="og:title" content="My new title" key="title" />
         </Head>
         <p>Hello world!</p>
-        <h1>First Post</h1>
+       
+
         <h2>
             <Link href="/">← Back to home</Link>
         </h2>
+        {/* {JSON.stringify(data.products)} */}
     </>;
 }
